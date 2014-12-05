@@ -9,9 +9,9 @@
       heightSegments
     );
 
-    var X_OFFSET_DAMPEN = 0.5;
-    var Y_OFFSET_DAMPEN = 0.1;
-    var Z_OFFSET_DAMPEN = 0.1;
+    var X_OFFSET_DAMPEN = 0.8;
+    var Y_OFFSET_DAMPEN = 0.3;
+    var Z_OFFSET_DAMPEN = 0.5;
 
     var randSign = function() {
       return (Math.random() > 0.5) ? 1 : -1;
@@ -56,7 +56,8 @@
       0.1,
       1000
     );
-    camera.position.z = 100;
+    camera.position.z = 30;
+    camera.rotation.x = 0.9;
 
     var plane = makePlane(makePlaneGeometry(400, 400, 100, 100));
     scene.add(plane);
